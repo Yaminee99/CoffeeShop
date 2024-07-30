@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        .errorblock {
+            color: red;
+            font-size: 0.875em;
+            margin: 5px 0;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+        <!-- <div class="logo"><img src="./images/logo (1).png" alt="Logo"></div> -->
+        <nav id="navbar" class="navbar"></nav>
+        <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+    
+        <div class="search-form">
+            <!-- <input type="search" id="search-box" placeholder="search here..."> -->
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+    </header>
+
+    <section class="login" id="login">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 class="heading"> <span>Login</span> Page</h1>
+        <form id="loginForm" novalidate>
+        <!-- <h2>Login</h2> -->
+        <div>
+            <label for="username">Username or Email:</label>
+            <input type="text" id="username" name="username" required />
+            <div class="errorblock">
+                <b id="error1"></b>
+            </div>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <div class="errorblock">
+                <b id="error2"></b>
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="Login" />
+        </div>
+    </form>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../CoffeeWebsite/JQuery/validation.js"></script>
+</body>
+</html>
